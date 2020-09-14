@@ -1,0 +1,120 @@
+body {
+  background-color: #D6BCA8;
+  color: black;
+}
+
+#burger {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vw;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.bun {
+  width: 15vw;
+  color: white;
+  background-color: #90592E;
+  margin: 0.5% 0;
+}
+
+svg {
+  width: 3vw;
+  padding: 1vw 6.1vw;
+  position: absolute;
+}
+
+.top {
+  height: 4vw;
+  padding: 1.5vw 0;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.bottom {
+  height: 3vw;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.ingredient {
+  width: 13vw;
+  height: 1.25vw;
+  border-radius: 50px;
+}
+
+.cheese {
+  background: #E8A415;
+  margin: 0.2% 0 0.2% 150vw;
+  animation: slideInLeft 1s ease-in;
+  animation-fill-mode: forwards;  
+}
+
+.first {
+  animation-delay: 4s;
+}
+
+.second{
+  animation-delay: 2s;
+}
+
+.beef {
+  background: #482C1F;
+  margin: 0.2% 0 0.2% 150vw;
+  animation: slideInLeft 1s ease-in;
+  animation-fill-mode: forwards;  
+}
+
+.pickleGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0.2% 150vw 0.2% 0;
+  animation: slideInRight 1s ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;  
+}
+
+.pickles {
+  background: #6F7B10;
+  width: 2vw;
+  border: 0.1vw solid #2E2C05;
+  border-radius: 100px;
+}
+
+.chicken {
+  background: #C58B74;
+  margin: 0.2% 150vw 0.2% 0;
+  animation: slideInRight 1s ease-in;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;  
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2vw;
+  float: right;
+}
+
+
+@keyframes slideInLeft {
+  0%{
+    margin-left: 100vw;
+  }
+  100%{
+    margin-left: 0;
+  }
+}
+
+@keyframes slideInRight {
+  0%{
+    margin-right: 100vw;
+  }
+  100%{
+    margin-right: 0;
+  }
+}
